@@ -15,7 +15,6 @@ body{
     width: inherit;
     height: inherit;
     max-width: 1215px;
-    border: 2px solid orange;
 }
 .container--mlauto{
     margin: unset;
@@ -39,7 +38,8 @@ body{
     width: 100%;
     max-width: 510px;
 }
-.site-header-menu__link{
+.site-header-menu__link,
+.site-footer-menu__link{
     letter-spacing: 2px;
     text-decoration: none;
     color: #3C3C3C;
@@ -91,12 +91,90 @@ body{
 .site-main-info-short__icon{
     width: max-content;
 }
-.site-main
+.site-main-info-short{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    max-width: 364px;
+    margin-bottom: 40px;
+}
+.site-main-info-short__text{
+    font-size: 14px;
+    font-weight: 600;
+}
+.site-main-info-short__item:nth-child(1){
+    width: 78px;
+    height: 88px;
+    border: 2px solid #3C3C3C;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    align-items: end;
+}
+.site-main-info-short__item:not(.site-main-info-short__item:nth-child(1)){
+    display: flex;
+    align-items: center;
+    height: max-content;
+    padding-bottom: 10px;
+}
+.site-main-content{
+    width: 100%;
+    height: 50px;
+
+}
+.site-main-contacts{
+    background-color: #F8F8F8;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site-main-contacts-wrap{
+    max-width: 395px;
+}
+.site-main-contacts-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0;
+}
+.site-main-contacts-tel{
+    margin-left: 40px;
+}
+.site-main-contacts-title{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.site-main-contacts__link{
+    color: #3C3C3C;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.site-footer{
+    background-color: #F8F8F8;
+    border-top: 1px solid #3C3C3C;
+}
+.site-footer-content{
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+}
+.site-footer-menu{
+    display: flex;
+    gap: 65px;
+}
+.site-main,
 .site-footer{
     width: 100%;
 }   
 .site-footer-logo__img{
     max-width: 121px;
+    max-height: 33px;
 }
 @media(min-width: 1885px){
     .site-main-info{
