@@ -571,10 +571,16 @@ body{
     .advanteges-picture__img{
         max-width: inherit;
     }
-    .advanteges-about-list__item:not(:last-child), .about__title{
+    .advanteges-about-list__item:not(:last-child){
         margin-bottom: 10px;
     }
     .title{
+        font-size: 37px;
+    }
+    .site-main-research__img{
+        max-width: 450px;
+    }
+    .site-main-research__title{
         font-size: 37px;
     }
 }
@@ -621,10 +627,23 @@ body{
 }
 @media(max-width: 930px){
     .advanteges-picture{
-        max-width: 310px;
+        max-width: 337px;
+    }
+    .advanteges-about-text{
+        padding-right: 5px;
     }
     .abroad__img{
         max-width: 350px;
+    }
+    .site-main-research__title{
+        font-size: 35px;
+        margin-bottom: 17px;
+    }
+    .research-description__item{
+        margin-bottom: 11px;
+    }
+    .advanteges-about{
+        padding-left: 20px; 
     }
 }
 @media(max-width: 915px){
@@ -640,6 +659,17 @@ body{
     }
     .standart-content {
         padding: 3px 0 3px 45px;
+    }
+}
+@media(max-width: 862px){
+    .site-main-research__title{
+        font-size: 29px;
+    }
+    .research-description__item {
+        font-size: 15px;
+    }
+    .site-main-research__img{
+        max-width: 400px;
     }
 }
 @media(max-width: 851px){
@@ -673,5 +703,64 @@ body{
     }
     .abroad__text{
         margin-bottom: 30px;
+    }
+    .site-main-research-item:not(:last-child){
+        padding-bottom: 80px;
+    }
+}
+@media(max-width: 820px){
+    .about-content-row, .about-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px 0;
+    }
+    .site-main-research, .site-content-advantages, .site-main-history{
+        padding-bottom: 80px;
+    }
+    .site-main-content-about{
+        padding: 80px var(--safty-padding);
+    }
+}
+@media(max-width: 790px){
+    .site-main-research__img {
+        max-width: 360px;
+    }
+}
+@media(max-width: 768px){
+    .site-main-research__img{
+        max-width: 300px;
+    }
+}
+@media(max-width: 760px){
+    .advanteges-item{
+        flex-direction: column-reverse;
+    }
+    .advanteges-about__title{
+        text-align: center;
+    }
+    .advanteges-item:not(:last-child) .advanteges-about .advanteges-about-text {
+        max-width: unset;
+        padding-bottom: 20px;
+    }
+    .advanteges-about__list{
+        margin-bottom: 40px;
+    }
+    .advanteges-about-list__text{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+@media(max-width: 710px){
+    .site-main-research-item{
+        flex-direction: column-reverse !important;
+    }
+    .site-main-research__img{
+        max-width: 100%;
+    }
+    .site-main-research-item:not(:last-child){
+        padding-bottom: 50px;
+    }
+    .site-main-research__description{
+        margin-bottom: 25px;
     }
 }
