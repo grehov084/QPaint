@@ -96,7 +96,7 @@ body{
 .sitemain-info-description-slogan{
     font-size: 24px;
     font-weight: 400;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .site-main-info-description-title{
     font-weight: 400;
@@ -105,7 +105,7 @@ body{
 }
 .site-main-info-description{
     width: 100%;
-    max-width: 703px;
+    max-width: inherit;
 }
 .site-main-info-short__icon{
     width: max-content;
@@ -155,6 +155,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 0;
+    font-weight: 300;
 }
 .site-main-contacts-tel{
     padding-left: 40px;
@@ -494,11 +495,10 @@ body{
     border-top: 1px solid #3C3C3C;
 }
 .site-footer-content{
-    padding: 18px 0;
+    padding: 32px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 63px;
 }
 .site-footer-menu{
     display: flex;
@@ -514,12 +514,22 @@ body{
     max-width: 121px;
     max-height: 33px;
 }
+.site-footer-copy{
+    font-weight: 300;
+}
 @media(min-width: 1700px){
     .site-main-info{
         background-size: 45.5%;
     }
 }
-
+@media(max-width: 1630px){
+    .site-main-banner__img{
+        max-width: 735px;
+    }
+    .site-main-info{
+        height: 683px;
+    }
+}
 @media(max-width: 1540px){
     .standart-content{
         padding: 90px 0 90px 70px;
@@ -534,6 +544,36 @@ body{
     }
     .standart__image{
         max-width: 630px;
+    }
+    .site-main-banner__img{
+        max-width: 590px;
+    }
+    .site-main-info{
+        height: 550px;
+    }
+    .site-main-info-description-title{
+        font-size: 60px;
+    }
+    .sitemain-info-description-slogan, .site-main-info-description-subtitle{
+        font-size: 20px;
+    }
+    .site-main-info-content{
+        max-width: 650px;
+    }
+    .site-main-info-short__item:nth-child(1){
+        width: 65px;
+        height: 65px;
+    }
+}
+@media(max-width: 1230px){
+    .site-header-content{
+        padding: 0 var(--safty-padding);
+    }
+    .site-main-info-content{
+        padding-left: var(--safty-padding);
+    }
+    .site-main-info-content{
+        max-width: 585px;
     }
 }
 @media(max-width: 1280px){
@@ -564,6 +604,11 @@ body{
         padding: 150px var(--safty-padding);
     }
 }
+@media(max-width: 1200px){
+    .site-main-info-description-title{
+        font-size: 47px;
+    }
+}
 @media(max-width: 1140px){
     .advanteges-picture{
         max-width: 450px;
@@ -591,6 +636,18 @@ body{
     .abroad__img{
         max-width: 500px;
     }
+    .site-main-banner__img{
+        max-width: 480px;
+    }
+    .site-main-info {
+        height: 448px;
+    }
+    .site-main-info-short{
+        padding-bottom: 25px;
+    }
+    .sitemain-info-description-slogan{
+        padding-top: 20px;
+    }
 }
 @media(max-width: 1024px){
     .advanteges-picture{
@@ -606,6 +663,10 @@ body{
         font-size: 14px;
         line-height: 1.2;
     }
+    .potential-item__title{
+        font-size: 28px;
+        max-width: 341px;
+    }
 }
 @media(max-width: 990px){
     .abroad__img{
@@ -616,6 +677,21 @@ body{
     .advanteges-picture{
         max-width: 310px;
     }
+    .site-main-banner__img{
+        max-width: 400px;
+    }
+    .site-main-info-content{
+        max-width: 555px;
+    }
+    .site-main-info {
+        height: 373px;
+    }
+    .sitemain-info-description-slogan, .site-main-info-description-subtitle {
+        font-size: 17px;
+    }
+    .site-main-info-description-title {
+        font-size: 37px;
+    }
 }
 @media(max-width: 950px){
     .standart__image {
@@ -624,13 +700,16 @@ body{
     .standart-content {
         padding: 8px 0 8px 45px;
     }
+    .history-period__text{
+        flex-basis: 70% ;
+    }
 }
 @media(max-width: 930px){
     .advanteges-picture{
         max-width: 337px;
     }
     .advanteges-about-text{
-        padding-right: 5px;
+        padding: 0 10px;
     }
     .abroad__img{
         max-width: 350px;
@@ -643,7 +722,7 @@ body{
         margin-bottom: 11px;
     }
     .advanteges-about{
-        padding-left: 20px; 
+        padding: 0 20px; 
     }
 }
 @media(max-width: 915px){
@@ -660,6 +739,9 @@ body{
     .standart-content {
         padding: 3px 0 3px 45px;
     }
+    .site-main-info-content {
+        max-width: 447px;
+    }   
 }
 @media(max-width: 862px){
     .site-main-research__title{
@@ -670,6 +752,13 @@ body{
     }
     .site-main-research__img{
         max-width: 400px;
+    }
+    .potential-item__title {
+        font-size: 26px;
+        max-width: 300px;
+    }
+    .site-footer-menu{
+        max-width: 420px;
     }
 }
 @media(max-width: 851px){
@@ -725,17 +814,38 @@ body{
     .site-main-research__img {
         max-width: 360px;
     }
+    .site-footer-menu{
+        max-width: 375px;
+    }
+    .site-main-info-content {
+        max-width: 450px;
+    }
+    .site-main-info-content {
+        max-width: 429px;
+    }
+    .site-main-info-description-title {
+        font-size: 33px;
+    }
+    .site-main-info {
+        height: 327px;
+    }
+    .site-main-banner__img {
+        max-width: 350px;
+    }
 }
 @media(max-width: 768px){
     .site-main-research__img{
         max-width: 300px;
+    }
+    .potential-item__text{
+        flex-basis: 50%;
     }
 }
 @media(max-width: 760px){
     .advanteges-item{
         flex-direction: column-reverse;
     }
-    .advanteges-about__title{
+    .advanteges-about__title, .advanteges-about__subtitle{
         text-align: center;
     }
     .advanteges-item:not(:last-child) .advanteges-about .advanteges-about-text {
@@ -750,6 +860,17 @@ body{
         line-height: 1.5;
     }
 }
+@media(max-width: 740px){
+    .site-main-info-short{
+        max-width: 320px;
+    }
+}
+@media(max-width: 730px){
+    .site-footer-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+}
 @media(max-width: 710px){
     .site-main-research-item{
         flex-direction: column-reverse !important;
@@ -762,5 +883,122 @@ body{
     }
     .site-main-research__description{
         margin-bottom: 25px;
+    }
+    .history-period__date{
+        font-size: 25px;
+        white-space: nowrap;
+        width: 98px;
+    }
+    .site-main-info-short {
+        max-width: 305px;
+    }
+    .site-main-info-content {
+        max-width: 305px;
+    }
+    .site-main-info-description-title {
+        font-size: 28px;
+    }
+    .site-main-banner__img {
+        max-width: 310px;
+    }
+    .site-main-info {
+        height: 290px;
+    }
+}
+@media(max-width: 670px){
+    .site-header-menu{
+        display: none;
+    }
+    .site-main-info-short{
+        max-width: 230px;
+        display: grid;
+        grid-template-areas: "pantone ecology"
+                             "pantone country";
+        align-items: center;
+    }
+    .site-main-info-short__item:nth-child(1){
+        grid-area: pantone;
+    }
+    .site-main-info-short__item:nth-child(2){
+        grid-area: country;
+    }
+    .site-main-info-short__item:nth-child(23){
+        grid-area: ecology;
+    }
+    .site-main-info-short__item:not(.site-main-info-short__item:nth-child(1)){
+        padding-bottom: 0;
+    }
+}
+@media(max-width: 630px){
+    .potential-item__title{
+        max-width: 278px;
+    }
+}
+@media(max-width: 610px){
+    .site-main-info-content {
+        max-width: 230px;
+    }
+    .site-main-info-description-title {
+        font-size: 22px;
+    }
+    .sitemain-info-description-slogan, .site-main-info-description-subtitle {
+        font-size: 14px;
+    }
+}
+@media(max-width: 590px){
+    .potential-item__title{
+        max-width: 230px;
+    }
+    .history-period__date{
+        font-size: 20px;
+    }
+}
+@media(max-width: 490px){
+    .potential-item{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .potential-item__title{
+        max-width: unset;
+    }
+    .advanteges-about__title{
+        padding: 0 var(--safty-padding);
+    }
+}
+@media(max-width: 460px){
+    .history-period__item{
+        flex-direction: column;
+        gap: 10px;          
+    }
+}
+@media(max-width: 425px){
+    .site-footer-menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .site-main-contacts-wrap{
+        padding: var(--safty-padding);
+    }
+    .site-main-contacts{
+        padding: 40px 0;
+    }
+}
+@media(max-width: 420px){
+    .potential__title{
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+}
+@media(max-width: 414px){
+    .site-main-contacts-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-main-contacts-tel{
+        padding-left: 0;
+    }
+    .site-main-contacts-address{
+        text-align: center;
     }
 }
