@@ -9,5 +9,4 @@ burgerBtn.addEventListener("click", ()=>{
     else{
         mobileContent.removeAttribute("style");
     }
-
 });
