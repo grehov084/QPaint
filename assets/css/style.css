@@ -889,6 +889,9 @@ body{
     .potential-item__text{
         flex-basis: 50%;
     }
+    .site-main-ecology{
+        padding-bottom: 75px;
+    }
 }
 @media(max-width: 760px){
     .advanteges-item{
@@ -1021,7 +1024,32 @@ body{
     .site-main-banner__img {
         max-width: 269px;
     }
-
+}
+@media(max-width: 525px){
+    .site-main-banner{
+        position: relative;
+        top: 0;
+    }
+    .site-main-banner__img{
+        max-width: 100%;
+    }
+    .site-main-info{
+        height: unset;
+    }
+    .site-main-info-content{
+        position: absolute;
+        height: max-content;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 30px;
+    }
+    .site-main-info-short__item:nth-child(1){
+        border-color: #fff;
+    }
+    .container--dflex{
+        display: flex;
+        align-items: center;
+    }
 }
 @media(max-width: 490px){
     .potential-item{
@@ -1062,6 +1090,9 @@ body{
         font-size: 38px;
         margin-bottom: 35px;
     }
+    .ecology-description__title, .abroad__title{
+        font-size: 38px;
+    }
 }
 @media(max-width: 414px){
     .site-main-contacts-text{
@@ -1073,5 +1104,10 @@ body{
     }
     .site-main-contacts-address{
         text-align: center;
+    }
+}
+@media(max-width: 340px){
+    .advanteges-picture {
+        max-width: 320px;
     }
 }
