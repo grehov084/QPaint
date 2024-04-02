@@ -15,6 +15,7 @@ html{
 body{
     font-family: "Roboto";
     color: #3C3C3C;
+    overflow-x: hidden;
 }
 .container{
     margin: 0 auto;
@@ -59,7 +60,7 @@ body{
 .site-main-banner{
     top: 101px;
     position: absolute;
-    max-width: 854px;
+    max-width: 837px;
     right: 0;
     z-index: 0;
 }
@@ -80,11 +81,12 @@ body{
     width: 100%;
     max-width: 703px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     height: 100%;
     position: relative;
     z-index: 1;
+    padding-top: 121px;
+    padding-left: 9px;
 }
 .site-main-info-img-box{
     width: 100%;
@@ -99,12 +101,12 @@ body{
 .sitemain-info-description-slogan{
     font-size: 24px;
     font-weight: 400;
-    padding-top: 40px;
+    padding: 40px 0 45px 0;
 }
 .site-main-info-description-title{
     font-weight: 400;
     font-size: 80px;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 .site-main-info-description{
     width: 100%;
@@ -119,7 +121,7 @@ body{
     align-items: end;
     width: 100%;
     max-width: 364px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
 }
 .site-main-info-short__text{
     font-size: 14px;
@@ -129,7 +131,7 @@ body{
     width: 78px;
     height: 88px;
     border: 2px solid #3C3C3C;
-    padding: 0 10px 10px 10px;
+    padding: 0 9px 9px 9px;
     display: flex;
     align-items: end;
 }
@@ -137,7 +139,7 @@ body{
     display: flex;
     align-items: center;
     height: max-content;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     gap: 5px;
 }
 .site-main-content{
@@ -202,6 +204,8 @@ body{
 }
 .about-item__text{
     text-transform: uppercase;
+    font-weight: 500;
+
 }
 .about-item__num{
     font-weight: 500;
@@ -388,7 +392,13 @@ body{
     margin-bottom: 10px;
 }
 .history-period__text{
-    flex-basis: 80%;
+    flex-basis: 76%;
+    font-size: 20px;
+}
+.history-period-text__description{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 .history-period-text__title{
     font-size: 20px;
@@ -405,7 +415,11 @@ body{
     font-weight: 500;
 }
 .history-period-text__item:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+.history-period__item:not(:first-child) .history-period__text{
+    display: flex;
+    align-items: end;
 }
 .history-period-text__year{
     font-weight: 500;
@@ -548,6 +562,9 @@ body{
     transform: translate(0, -103%);
     z-index: 2;
     transition: 0.5s;
+}
+.site-header-menu__item:nth-child(1){
+    padding-left: 19px;
 }
 .site-header-menu-mobile__item{
     width: 100%;
