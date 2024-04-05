@@ -13,4 +13,11 @@ burgerBtn.addEventListener("click", ()=>{
     }
 });
 
-
+/*
+for(i=0; i<advantegesContent.childElementCount;){
+    if(advantegesContent.children[i].getBoundingClientRect().top < 10){
+        advantegesContent.children[i].style.cssText = "position: fixed; top: 0";
+        i++;
+    }
+}
+*/
