@@ -84,3 +84,4 @@ window.addEventListener("scroll", ()=>{
         }, 350);
     }
 });
+$("a.site-main-certs__img").fancybox({});
