@@ -616,7 +616,7 @@ body{
 }
 @media(max-width: 1630px){
     .site-main-banner__img{
-        max-width: 735px;
+        max-width: 715px;
     }
     .site-main-info{
         height: 683px;
@@ -652,7 +652,7 @@ body{
         max-width: 630px;
     }
     .site-main-banner__img{
-        max-width: 590px;
+        max-width: 575px;
     }
     .site-main-info{
         height: 550px;
@@ -750,7 +750,7 @@ body{
         max-width: 500px;
     }
     .site-main-banner__img{
-        max-width: 480px;
+        max-width: 468px;
     }
     .site-main-info {
         height: 448px;
@@ -800,7 +800,7 @@ body{
         max-width: 310px;
     }
     .site-main-banner__img{
-        max-width: 400px;
+        max-width: 389px;
     }
     .site-main-info-content{
         max-width: 487px;
@@ -971,7 +971,7 @@ body{
         height: 327px;
     }
     .site-main-banner__img {
-        max-width: 350px;
+        max-width: 341px;
     }
     .site-main-info-short{
         flex-wrap: wrap;
@@ -1051,7 +1051,7 @@ body{
         font-size: 28px;
     }
     .site-main-banner__img {
-        max-width: 310px;
+        max-width: 302px;
     }
     .site-main-info {
         height: 290px;
@@ -1120,7 +1120,7 @@ body{
         height: 252px;
     }
     .site-main-banner__img {
-        max-width: 269px;
+        max-width: 263px;
     }
     .sitemain-info-description-slogan{
         padding: 15px 0 15px 0;
