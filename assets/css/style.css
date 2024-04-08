@@ -369,13 +369,6 @@ body{
 .advanteges-picture__img{
     max-width: 500px;
 }
-.advanteges-picture--pantone{
-    padding: 50px;
-    background-color: #F0F0F0;
-}
-.advanteges-picture__img--pantone{
-    max-width: 400px;
-}
 .site-main-history{
     padding-bottom: 150px;
 }
