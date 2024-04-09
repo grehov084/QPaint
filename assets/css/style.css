@@ -295,7 +295,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 170px;
+    max-width: 75px;
     padding-top: 10px;
 }
 .potential-item__text{
@@ -373,7 +373,7 @@ body{
     padding-bottom: 150px;
 }
 .history-text{
-    padding: 40px 0 60px 0;
+    padding: 40px 0 15px 0;
     max-width: 699px;
 }
 .history__title{
@@ -384,10 +384,15 @@ body{
 .history-text__item:not(:last-child){
     margin-bottom: 15px;
 }
-.history-text__item{
+.history-text__item, .history-about-list__item, .history-about__paragraph{
     font-weight: 300;
     line-height: 1.5;
 }
+.history-about-list{
+    padding-left: 22px;
+    padding-top: 15px;
+}
+/*
 .history-period__item{
     background-color: #F8F8F8;
     display: flex;
@@ -437,6 +442,7 @@ body{
     position: relative;
     top: -3px;
 }
+*/
 .site-main-research{
     padding-bottom: 150px;
 }
@@ -475,6 +481,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
 }
 .abroad-decription{
     max-width: 497px;
@@ -818,9 +825,11 @@ body{
     .standart-content {
         padding: 8px 0 8px 45px;
     }
+    /*
     .history-period__text{
         flex-basis: 70% ;
     }
+    */
 }
 @media(max-width: 930px){
     .advanteges-picture{
@@ -1029,11 +1038,13 @@ body{
     .site-main-research__description{
         margin-bottom: 25px;
     }
+    /*
     .history-period__date{
         font-size: 25px;
         white-space: nowrap;
         width: 98px;
     }
+    */
     .site-main-info-short {
         max-width: 305px;
     }
@@ -1104,9 +1115,11 @@ body{
     .potential-item__title{
         max-width: 230px;
     }
+    /*
     .history-period__date{
         font-size: 20px;
     }
+    */
 }
 @media(max-width: 565px){
     .site-main-info{
@@ -1179,12 +1192,14 @@ body{
         font-size: 30px;
     }
 }
+/*
 @media(max-width: 460px){
     .history-period__item{
         flex-direction: column;
         gap: 10px;          
     }
 }
+*/
 @media(max-width: 425px){
     .site-footer-menu{
         flex-direction: column;
