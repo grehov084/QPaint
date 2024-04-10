@@ -1,4 +1,4 @@
-let burgerBtn, mobileContent, advantegesContent, advantegesItem, header, technology, properties, certs, technologyButton, propertiesButton, certsButton, technologyButtonMob, propertiesButtonMob, certsButtonMob, technologyButtonFooter, propertiesButtonFooter, certsButtonFooter, siteUp;
+let burgerBtn, phoneInput, mobileContent, advantegesContent, advantegesItem, header, technology, properties, certs, technologyButton, propertiesButton, certsButton, technologyButtonMob, propertiesButtonMob, certsButtonMob, technologyButtonFooter, propertiesButtonFooter, certsButtonFooter, siteUp;
 
 burgerBtn = document.querySelector(".site-header-burger");
 mobileContent = document.querySelector(".site-header-mobile");
@@ -21,6 +21,8 @@ propertiesButtonFooter = document.querySelector(".site-footer-menu__item--prop")
 certsButtonFooter = document.querySelector(".site-footer-menu__item--certs");
 
 siteUp = document.querySelector(".site-up");
+
+phoneInput = document.querySelector(".site-main-callback__input--tel");
 
 siteUp.addEventListener("click", ()=>{
     window.scrollTo(0, 0);
@@ -85,3 +87,11 @@ window.addEventListener("scroll", ()=>{
     }
 });
 $("a.site-main-certs__img").fancybox({});
+
+const phoneMask = new IMask(phoneInput, {
+    mask: "+{7}(000)000-00-00",
+    placeholderChar: 'X',
+    placeholder:{
+        show: 'always'
+    }
+  });

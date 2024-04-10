@@ -183,7 +183,7 @@ body{
     width: 100%;
     max-width: 296px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 .about-item__num, .about-item__text{
@@ -318,7 +318,7 @@ body{
     padding-bottom: 150px;
 }
 .advanteges-item:not(:last-child){
-    padding-bottom: 60px;
+    padding-bottom: 33px;
 }
 .advanteges-item{
     display: flex;
@@ -392,57 +392,7 @@ body{
     padding-left: 22px;
     padding-top: 15px;
 }
-/*
-.history-period__item{
-    background-color: #F8F8F8;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 30px;
-}
-.history-period__item:not(:last-child){
-    margin-bottom: 10px;
-}
-.history-period__item:first-child{
-    padding-bottom: 3px;
-}
-.history-period__text{
-    flex-basis: 76%;
-    font-size: 20px;
-    padding: 10px 0;
-}
-.history-period-text__description{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-}
-.history-period-text__title{
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 32px;
-}
-.history-period-text__item{
-    display: flex;
-    gap: 0 10px;
-    line-height: 1.5;
-}
-.history-period__date{
-    font-size: 32px;
-    font-weight: 500;
-}
-.history-period-text__item:not(:last-child){
-    margin-bottom: 23px;
-}
-.history-period__item:not(:first-child) .history-period__text{
-    display: flex;
-    align-items: end;
-}
-.history-period-text__year{
-    font-weight: 500;
-    font-size: 20px;
-    position: relative;
-    top: -3px;
-}
-*/
+
 .site-main-research{
     padding-bottom: 150px;
 }
@@ -477,11 +427,11 @@ body{
     max-width: 500px;
 }
 .site-main-abroad{
-    padding-bottom: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    padding-bottom: 150px;
 }
 .abroad-decription{
     max-width: 497px;
@@ -575,6 +525,7 @@ body{
 .site-main-certs{
     width: 100%;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 .site-main-certs-wrap{
     display: flex;
@@ -608,6 +559,82 @@ body{
     opacity: 0;
     display: none;
     transition: opacity 250ms ease 0s;;
+}
+.history-about-item{
+    font-weight: 300;
+    width: 350px;
+    padding-right: 35px;
+}
+.history-about-item:not(:last-child, :nth-child(3)){
+    border-right: 2px solid #799799;
+}
+.history-about-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+}
+.history-about__title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.history-about__text{
+    text-align: center;
+}
+.site-main-callback{
+    color: #fff;
+    padding: 150px 0;
+    background-image: url("../img/exampleFormBg.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.site-main-callback-title{
+    font-weight: 400;
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.site-main-callback-description{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.site-main-callback-form-wrap{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.site-main-callback-form{
+    width: 100%;
+}
+.site-main-callback__input{
+    width: 100%;
+    max-width: 30%;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0 20px;
+    border: none;
+}
+.site-main-callback__input--submit{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #000;
+    color: #fff;
+}
+@media screen{
+    .site-main-callback__input--submit:hover{
+        background-color: #fff;
+        color: #000;
+    }
 }
 @media(min-width: 1700px){
     .site-main-info{
